@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laptopiston</title>
+</head>
+<body>
+
+    {% for laptop in object_list %}
+        <a href="{% url 'laptop-detail-view' laptop.pk %}">
+            {{ laptop.name }}
+            <br><br>
+        </a>
+    {% endfor %}
+</body>
+</html>

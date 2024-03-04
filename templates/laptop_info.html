@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LaptopInfo</title>
+</head>
+<body>
+    {% for laptop in laptops%}
+        <a href="{% url 'laptop-detail' laptop.pk %}">
+            {{laptop.name}}
+        </a>
+         <br><br>
+    {% endfor %}
+</body>
+</html>
