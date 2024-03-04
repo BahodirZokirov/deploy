@@ -2,6 +2,8 @@ asgiref
 dj-database-url
 Django
 django-jazzmin
+gunicorn
+packaging
 pillow
 psycopg
 python-dotenv
